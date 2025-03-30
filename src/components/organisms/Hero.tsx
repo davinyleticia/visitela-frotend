@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ShortLinkForm from "../molecules/ShortLinkForm";
 
 export default function Hero() {
@@ -11,7 +12,7 @@ export default function Hero() {
           </p>
           <ShortLinkForm />
         </div>
-        <img src="/pc-start.svg" alt="Visite.la"/>
+        <Image src="/pc-start.svg"  width={500} height={60} alt="Visite.la"/>
       </div>
     </div>
   );
