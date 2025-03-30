@@ -8,7 +8,7 @@ export default function Hero() {
         <div>
           <h1 className="text-5xl font-bold mb-4">Venha aconchegar no nosso servidor, ter o seu espaço online</h1>
           <p className="text-3xl mb-8">
-          Se junta ao universo visitela. com o seu nome, comércio, banda, influencer e partilhe com quem quiser.
+          Se junta ao universo visitela, com o seu: nome, comércio, banda, influencer e partilhe com quem quiser.
           </p>
           <ShortLinkForm />
         </div>
