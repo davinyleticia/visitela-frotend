@@ -6,9 +6,9 @@ export default function Hero() {
     <div className=" bg-white">
       <div className="flex flex-row items-center justify-center max-w-7xl py-40 mx-auto px-1">
         <div>
-          <h1 className="text-4xl font-bold mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
+          <h1 className="text-4xl font-bold mb-4">Venha aconchegar no nosso servidor, ter o seu espaço online</h1>
           <p className="text-lg mb-8">
-          Lorem ipsum dolor sit amet consectetur. Nascetur nisl et sodales non aliquet vel blandit. In eu blandit eu commodo. Ut aliquam id in porta amet. Eget egestas.
+          Se junta ao universo visitela. Crie o seu espaço online, com o seu nome, e partilhe com quem quiser.
           </p>
           <ShortLinkForm />
         </div>
