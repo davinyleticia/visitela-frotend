@@ -2,12 +2,13 @@ import { useState } from "react";
 import PrefixInput from "../atoms/PrefixInput";
 import Button from "../atoms/Button";
 
-export default function ShortLinkForm() {
+interface ShortLinkFormProps {
+  handleCreate: () => void; // Tipo de handleCreate
+}
+
+export default function ShortLinkForm({ handleCreate }: ShortLinkFormProps) {
   const [name, setName] = useState("");
 
-  const handleCreate = () => {
-    console.log("Criando link:", `Visite.la/${name}`);
-  };
 
   return (
     <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center sm:items-start">

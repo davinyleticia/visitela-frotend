@@ -1,7 +1,15 @@
 import Image from "next/image";
 import ShortLinkForm from "../molecules/ShortLinkForm";
+import { useRouter } from 'next/navigation';
 
 export default function Hero() {
+
+    const router = useRouter();
+  
+    const handleCreate = () => {
+      router.push('/criar-conta');
+    };
+
   return (
     <div className="bg-white">
       <div className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto px-4 py-20 gap-10">
@@ -14,10 +22,9 @@ export default function Hero() {
           <p className="text-lg sm:text-xl md:text-2xl mb-8">
             Se junta ao universo visitela, com o seu: nome, comércio, banda, influencer e partilhe com quem quiser.
           </p>
-          <ShortLinkForm />
+          <ShortLinkForm handleCreate={handleCreate}/>
         </div>
 
-        {/* Imagem */}
         <div className="md:w-1/2 flex justify-center">
           <Image
             src="/pc-start.svg"

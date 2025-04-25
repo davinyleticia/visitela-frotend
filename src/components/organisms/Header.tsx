@@ -13,7 +13,7 @@ export default function Header() {
     router.push('/login');
   };
   const handleCreate = () => {
-    console.log("Criando link:", `Visite.la/${name}`);
+    router.push('/');
   };
 
   const toggleMenu = () => {
