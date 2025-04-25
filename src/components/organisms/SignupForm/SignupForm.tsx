@@ -28,7 +28,7 @@ export const SignupForm = () => (
       <ButtonBlack type="submit">Validar conta</ButtonBlack>
 
       <p className="text-xs text-gray-600 text-center mt-4">
-        Ao clicar em Criar conta, você concorda com os <a href="#" className="underline">Termos e Condições</a> e confirma que leu o nosso <a href="#" className="underline">Política de Privacidade</a>.
+        Ao clicar em Validar conta, você concorda com os <a href="#" className="underline">Termos e Condições</a> e confirma que leu o nosso <a href="#" className="underline">Política de Privacidade</a>.
       </p>
     </form>
   </div>
