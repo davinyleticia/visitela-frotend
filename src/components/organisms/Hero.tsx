@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Texto e formulário */}
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Venha se aconchegar no nosso servidor e tenha seu espaço online, onde você pode crescer, vender e compartilhar!
+          Venha se aconchegar no nosso servidor e tenha seu espaço online!
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-8">
           Se junta ao universo visitela, com o seu: nome, comércio, banda, influencer e partilhe com quem quiser.
