@@ -20,9 +20,9 @@ export const ProfileCard = () => {
     if (accelerationIncludingGravity) {
       // Checando se o movimento do dispositivo foi suficientemente forte
       if (
-        (accelerationIncludingGravity.x && accelerationIncludingGravity.x > 15) ||
-        (accelerationIncludingGravity.y && accelerationIncludingGravity.y > 15) ||
-        (accelerationIncludingGravity.z && accelerationIncludingGravity.z > 15)
+        (accelerationIncludingGravity.x && accelerationIncludingGravity.x > 25) ||
+        (accelerationIncludingGravity.y && accelerationIncludingGravity.y > 25) ||
+        (accelerationIncludingGravity.z && accelerationIncludingGravity.z > 25)
       ) {
         toggleCard(); // Alterna o card baseado no movimento
       }
@@ -58,7 +58,7 @@ export const ProfileCard = () => {
         {/* Condicional para alternar entre os cards */}
         {showQrCode ? (
           <div className="flex justify-center items-start my-6 mb-4 border-2 border-dashed border-gray-300 rounded-lg p-4">
-            <Image width={100}  height={100} src="./mooke/qcode.png" alt="QR Code" />
+            <Image src="/mooke/qcode.png" width={400} height={400} alt="QR Code" />
           </div>
         ) : (
           <>
