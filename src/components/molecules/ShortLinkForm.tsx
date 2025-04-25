@@ -10,9 +10,17 @@ export default function ShortLinkForm() {
   };
 
   return (
-    <div className="flex gap-2">
-      <PrefixInput value={name} onChange={(e) => setName(e.target.value)} />
-      <Button text="Criar" onClick={handleCreate} />
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center sm:items-start">
+      <PrefixInput 
+        value={name} 
+        onChange={(e) => setName(e.target.value)} 
+        className="w-full sm:w-auto"
+      />
+      <Button 
+        text="Criar" 
+        onClick={handleCreate} 
+        className="w-full sm:w-auto" 
+      />
     </div>
   );
 }

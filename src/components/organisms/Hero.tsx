@@ -3,16 +3,31 @@ import ShortLinkForm from "../molecules/ShortLinkForm";
 
 export default function Hero() {
   return (
-    <div className=" bg-white">
-      <div className="flex flex-row items-center justify-center max-w-7xl py-40 mx-auto px-1">
-        <div>
-          <h1 className="text-5xl font-bold mb-4">Venha aconchegar no nosso servidor, ter o seu espaço online</h1>
-          <p className="text-3xl mb-8">
-          Se junta ao universo visitela, com o seu: nome, comércio, banda, influencer e partilhe com quem quiser.
+    <div className="bg-white">
+      <div className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto px-4 py-20 gap-10">
+        
+        {/* Texto e formulário */}
+        <div className="text-center md:text-left md:w-1/2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Venha aconchegar no nosso servidor, ter o seu espaço online
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl mb-8">
+            Se junta ao universo visitela, com o seu: nome, comércio, banda, influencer e partilhe com quem quiser.
           </p>
           <ShortLinkForm />
         </div>
-        <Image src="/pc-start.svg"  width={500} height={60} alt="Visite.la"/>
+
+        {/* Imagem */}
+        <div className="md:w-1/2 flex justify-center">
+          <Image
+            src="/pc-start.svg"
+            width={500}
+            height={400}
+            alt="Visite.la"
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg"
+          />
+        </div>
+        
       </div>
     </div>
   );

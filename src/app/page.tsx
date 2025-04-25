@@ -10,7 +10,6 @@ import FooterImg from "@/components/organisms/FooterImg";
 export default function Home() {
   return (
     <>
-      {" "}
       <Headers />
       <Hero />
       <DescriptionApp colorBg="bg-[#FEF3F2]" />
