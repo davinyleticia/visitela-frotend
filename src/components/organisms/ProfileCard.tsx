@@ -13,7 +13,7 @@ export const ProfileCard = () => {
   const toggleCard = () => setShowQrCode((prev) => !prev);
 
   // Função para escutar os eventos de movimento
-  const handleDeviceMotion = (event) => {
+  const handleDeviceMotion = (event : any) => {
     const { accelerationIncludingGravity } = event;
 
     // Checando se o movimento do dispositivo foi suficientemente forte
