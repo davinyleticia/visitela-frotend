@@ -20,9 +20,9 @@ export const ProfileCard = () => {
     if (accelerationIncludingGravity) {
       // Checando se o movimento do dispositivo foi suficientemente forte
       if (
-        (accelerationIncludingGravity.x && accelerationIncludingGravity.x > 25) ||
-        (accelerationIncludingGravity.y && accelerationIncludingGravity.y > 25) ||
-        (accelerationIncludingGravity.z && accelerationIncludingGravity.z > 25)
+        (accelerationIncludingGravity.x && accelerationIncludingGravity.x > 15) ||
+        (accelerationIncludingGravity.y && accelerationIncludingGravity.y > 15) ||
+        (accelerationIncludingGravity.z && accelerationIncludingGravity.z > 15)
       ) {
         toggleCard(); // Alterna o card baseado no movimento
       }
