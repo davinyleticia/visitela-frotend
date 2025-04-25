@@ -1,9 +1,12 @@
+import React, { ChangeEvent } from "react";
+
 interface PrefixInputProps {
-    value: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  }
+  value: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
+}
   
-  export default function PrefixInput({ value, onChange }: PrefixInputProps) {
+  export default function PrefixInput({ value, className, onChange }: PrefixInputProps) {
     return (
       <div className="flex border border-gray-300 rounded-md overflow-hidden">
         <span className="bg-gray-100 px-3 flex items-center text-gray-500">Visite.la/</span>
@@ -11,7 +14,7 @@ interface PrefixInputProps {
           type="text" 
           value={value} 
           onChange={onChange} 
-          className="flex-1 px-3 py-2 outline-none"
+          className={`prefix-input ${className}`} 
         />
       </div>
     );

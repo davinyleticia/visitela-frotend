@@ -14,7 +14,7 @@ export default function ShortLinkForm() {
       <PrefixInput 
         value={name} 
         onChange={(e) => setName(e.target.value)} 
-        className="w-full sm:w-auto"
+        className="w-full sm:w-auto p-2"
       />
       <Button 
         text="Criar" 
@@ -24,3 +24,4 @@ export default function ShortLinkForm() {
     </div>
   );
 }
+

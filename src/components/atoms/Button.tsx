@@ -2,7 +2,8 @@ interface ButtonProps {
   text: string;
   onClick: () => void;
   variant?: "primary" | "outline";
-  fullWidth?: boolean; // Novo prop opcional
+  fullWidth?: boolean;
+  className?: string;
 }
 
 export default function Button({
