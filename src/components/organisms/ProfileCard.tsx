@@ -13,15 +13,23 @@ export const ProfileCard = () => {
   // Função para alternar o estado
   const toggleCard = () => setShowQrCode((prev) => !prev);
 
-  // Função para escutar os eventos de movimento
-  const handleDeviceMotion = (event : any) => {
+  const handleDeviceMotion = (event: DeviceMotionEvent) => {
     const { accelerationIncludingGravity } = event;
-
-    // Checando se o movimento do dispositivo foi suficientemente forte
-    if (accelerationIncludingGravity.x > 15 || accelerationIncludingGravity.y > 15 || accelerationIncludingGravity.z > 15) {
-      toggleCard(); // Alterna o card baseado no movimento
+  
+    // Verifica se accelerationIncludingGravity não é null ou undefined
+    if (accelerationIncludingGravity) {
+      // Checando se o movimento do dispositivo foi suficientemente forte
+      if (
+        (accelerationIncludingGravity.x && accelerationIncludingGravity.x > 15) ||
+        (accelerationIncludingGravity.y && accelerationIncludingGravity.y > 15) ||
+        (accelerationIncludingGravity.z && accelerationIncludingGravity.z > 15)
+      ) {
+        toggleCard(); // Alterna o card baseado no movimento
+      }
     }
   };
+  
+  
 
   useEffect(() => {
     // Adiciona o listener de movimento
