@@ -2,7 +2,7 @@ import { SocialIcon } from "../atoms/SocialIcon";
 import { EyeOff, Lock } from "lucide-react";
 
 type Props = {
-  platform: "instagram" | "tiktok";
+  platform: "instagram" | "tiktok" | "facebook" | "twitter" | "linkedin" | "youtube" | "whatsapp";
   username: string;
   isLocked: boolean;
 };
