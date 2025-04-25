@@ -8,8 +8,8 @@ type Props = {
 };
 
 export const SocialLink = ({ platform, username, isLocked }: Props) => (
-  <div className="flex items-center justify-between px-4 py-2 rounded-lg border border-gray-200 shadow-sm bg-white mb-2">
-    <div className="flex items-center gap-2">
+  <div className="flex items-center justify-between px-4 py-2 rounded-lg border border-gray-200 shadow-sm bg-white mb-2 cursor-pointer">
+    <div className="flex items-center gap-2 ">
       <SocialIcon type={platform} />
       <span className="text-2xl">{username}</span>
     </div>

@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="bg-white w-full shadow-sm">
       <div className="mx-auto max-w-7xl p-4 flex justify-between items-center">
-        <Logo src="/logo.svg" alt="Logo" height={100} width={100} onClick={handleHome} />
+        <Logo src="/logo.svg" alt="Logo" height={100} width={100} onClick={handleHome} className="cursor-pointer" />
 
         {/* Botão de menu mobile */}
         <button

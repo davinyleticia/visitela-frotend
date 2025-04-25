@@ -20,7 +20,7 @@ export default function ShortLinkForm({ handleCreate }: ShortLinkFormProps) {
       <Button 
         text="Criar" 
         onClick={handleCreate} 
-        className="w-full sm:w-auto" 
+        className="w-full sm:w-auto " 
       />
     </div>
   );

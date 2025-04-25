@@ -49,10 +49,10 @@ export const ProfileCard = () => {
     <div className="w-full max-w-200 p-6">
       <div className="p-6 rounded-xl shadow border bg-white">
         <div className="flex justify-between items-start mb-4">
-          <button className="text-2xl font-bold" onClick={handlefavotite}>
+          <button className="text-2xl font-bold cursor-pointer" onClick={handlefavotite}>
           <HeartPlus />
           </button>
-          <button className="text-2xl font-bold" onClick={toggleCard}>
+          <button className="text-2xl font-bold cursor-pointer" onClick={toggleCard}>
             {!showQrCode ? <QrCode /> : <CircleUserRound />}
           </button>
         </div>

@@ -12,7 +12,7 @@ export default function Button({
   onClick,
   fullWidth = false,
 }: ButtonProps) {
-  const baseStyles = "px-4 py-2 rounded-md text-sm sm:text-base transition-all";
+  const baseStyles = "px-4 py-2 rounded-md text-sm sm:text-base transition-all cursor-pointer";
 
   const variantStyles =
     variant === "primary"
