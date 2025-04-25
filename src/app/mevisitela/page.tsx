@@ -1,5 +1,4 @@
 "use client";
-import { Login } from "@/components/organisms/Login";
 import Headers from "@/components/organisms/Header";
 
 export default function Mevisite() {
