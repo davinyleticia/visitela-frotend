@@ -19,6 +19,10 @@ export default function Header() {
     router.push("/");
   };
 
+  const handleMeVisite = () => {
+    router.push("/mevisitela");
+  };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -38,7 +42,7 @@ export default function Header() {
 
         {/* Navbar em telas maiores */}
         <nav className="hidden sm:block">
-          <Navbar handleHome={handleHome} />
+          <Navbar handleHome={handleHome} handleMeVisite={handleMeVisite} />
         </nav>
 
         {/* Ações em telas maiores */}
@@ -55,7 +59,7 @@ export default function Header() {
       {/* Menu Mobile Dropdown */}
       {menuOpen && (
         <div className="sm:hidden px-4 pb-4 space-y-4">
-          <Navbar mobile={true} handleHome={handleHome} />
+          <Navbar mobile={true} handleHome={handleHome} handleMeVisite={handleMeVisite}/>
           <div className="flex flex-col space-y-2">
             <Button
               text="Iniciar sessão"

@@ -79,33 +79,38 @@ export const ProfileCard = () => {
 
             <h3 className="text-2xl font-medium mt-4 mb-2">Minhas redes</h3>
             <SocialLink
+              platform="other"
+              username="Minhas Viagens"
+              isLocked={false}
+            />
+            <SocialLink
               platform="instagram"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={false}
             />
             <SocialLink
               platform="tiktok"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={true}
             />
             <SocialLink
               platform="youtube"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={true}
             />
             <SocialLink
               platform="twitter"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={false}
             />
             <SocialLink
               platform="whatsapp"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={true}
             />
             <SocialLink
               platform="facebook"
-              username="edu_maria"
+              username="@edu_maria"
               isLocked={false}
             />
           </>

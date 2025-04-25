@@ -1,7 +1,7 @@
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaWhatsapp, FaYoutube, FaVolleyballBall } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
-export const SocialIcon = ({ type }: { type: "instagram" | "tiktok" | "facebook" | "twitter" | "linkedin" | "youtube" | "whatsapp" }) => {
+export const SocialIcon = ({ type }: { type: "instagram" | "tiktok" | "facebook" | "twitter" | "linkedin" | "youtube" | "whatsapp" | "other" }) => {
   const map = {
     instagram: <FaInstagram className="text-pink-500 w-5 h-5" />,
     tiktok: <FaTiktok className="text-black w-5 h-5" />,
@@ -10,6 +10,7 @@ export const SocialIcon = ({ type }: { type: "instagram" | "tiktok" | "facebook"
     linkedin: <FaLinkedin className="text-blue-600 w-5 h-5" />,
     youtube: <FaYoutube className="text-red-600 w-5 h-5" />,
     whatsapp: <FaWhatsapp className="text-green-500 w-5 h-5" />,
+    other: <FaVolleyballBall className="text-gray-500 w-5 h-5" />,
   };
   return map[type] ?? null;
 };
