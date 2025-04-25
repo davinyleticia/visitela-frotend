@@ -1,7 +1,7 @@
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
-export const SocialIcon = ({ type }: { type: "instagram" | "tiktok" }) => {
+export const SocialIcon = ({ type }: { type: "instagram" | "tiktok" | "facebook" | "twitter" | "linkedin" | "youtube" | "whatsapp" }) => {
   const map = {
     instagram: <FaInstagram className="text-pink-500 w-5 h-5" />,
     tiktok: <FaTiktok className="text-black w-5 h-5" />,

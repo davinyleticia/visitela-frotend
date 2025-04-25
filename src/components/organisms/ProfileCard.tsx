@@ -4,7 +4,7 @@ import { SocialLink } from "../molecules/SocialLink";
 import { Text } from "../atoms/Text";
 
 export const ProfileCard = () => (
-  <div className="w-full max-w-200 mx-auto">
+  <div className="w-full max-w-200 p-6">
     <div className=" p-6 rounded-xl shadow border bg-white">
       <div className="flex justify-end items-start mb-4">
         <button className="text-2xl font-bold">⋯</button>
@@ -26,12 +26,14 @@ export const ProfileCard = () => (
       <SocialLink platform="instagram" username="edu_maria" isLocked={false} />
       <SocialLink platform="tiktok" username="edu_maria" isLocked={true} />
       <SocialLink platform="youtube" username="edu_maria" isLocked={true} />
-        <SocialLink platform="twitter" username="edu_maria" isLocked={false} />
-        <SocialLink platform="whatsapp" username="edu_maria" isLocked={true} />
-        <SocialLink platform="facebook" username="edu_maria" isLocked={false} />
+      <SocialLink platform="twitter" username="edu_maria" isLocked={false} />
+      <SocialLink platform="whatsapp" username="edu_maria" isLocked={true} />
+      <SocialLink platform="facebook" username="edu_maria" isLocked={false} />
     </div>
-    <div className="flex justify-center items-center mt-4">
-      <a href="./in/denuciar" className="text-1xl">Denunciar</a>
+    <div className="flex justify-center items-center my-8">
+      <a href="./in/denuciar" className="text-1xl">
+        Denunciar
+      </a>
     </div>
   </div>
 );
