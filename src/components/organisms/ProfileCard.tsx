@@ -2,12 +2,13 @@ import { Avatar } from "../atoms/Avatar";
 import { ProfileActions } from "../molecules/ProfileActions";
 import { SocialLink } from "../molecules/SocialLink";
 import { Text } from "../atoms/Text";
+import { QrCode } from "lucide-react";
 
 export const ProfileCard = () => (
   <div className="w-full max-w-200 p-6">
     <div className=" p-6 rounded-xl shadow border bg-white">
       <div className="flex justify-end items-start mb-4">
-        <button className="text-2xl font-bold">⋯</button>
+        <button className="text-2xl font-bold"><QrCode /></button>
       </div>
       <div className="flex justify-center items-start mb-4">
         <Avatar src="../avatarMook.svg" alt="Maria Eduarda" />
