@@ -3,7 +3,7 @@ import { Avatar } from "../atoms/Avatar";
 import { ProfileActions } from "../molecules/ProfileActions";
 import { SocialLink } from "../molecules/SocialLink";
 import { Text } from "../atoms/Text";
-import { QrCode, CircleUserRound } from "lucide-react";
+import { QrCode, CircleUserRound, HeartPlus } from "lucide-react";
 import { useState, useEffect } from "react"; // Importando useState e useEffect
 import Image from "next/image";
 
@@ -12,6 +12,10 @@ export const ProfileCard = () => {
 
   // Função para alternar o estado
   const toggleCard = () => setShowQrCode((prev) => !prev);
+
+  const handlefavotite = () => {
+    window.location.href = "/in/favorite?username=edu_maria"; // Redireciona para a página de favoritos
+  }
 
   const handleDeviceMotion = (event: DeviceMotionEvent) => {
     const { accelerationIncludingGravity } = event;
@@ -44,7 +48,10 @@ export const ProfileCard = () => {
   return (
     <div className="w-full max-w-200 p-6">
       <div className="p-6 rounded-xl shadow border bg-white">
-        <div className="flex justify-end items-start mb-4">
+        <div className="flex justify-between items-start mb-4">
+          <button className="text-2xl font-bold" onClick={handlefavotite}>
+          <HeartPlus />
+          </button>
           <button className="text-2xl font-bold" onClick={toggleCard}>
             {!showQrCode ? <QrCode /> : <CircleUserRound />}
           </button>
