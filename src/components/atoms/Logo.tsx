@@ -1,7 +1,9 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
-export default function Logo() {
-    return (
-      <Image src="/logo.svg" alt="Visite.la"  width={100} height={10} className="h-8" />
-    );
-  }
+export default function Logo({ ...props }: ImageProps) {
+  return (
+      <Image
+        {...props}
+      />
+  );
+}
