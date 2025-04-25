@@ -5,6 +5,7 @@ import { SocialLink } from "../molecules/SocialLink";
 import { Text } from "../atoms/Text";
 import { QrCode, CircleUserRound } from "lucide-react";
 import { useState, useEffect } from "react"; // Importando useState e useEffect
+import Image from "next/image";
 
 export const ProfileCard = () => {
   const [showQrCode, setShowQrCode] = useState(false); // Estado para alternar entre os cards
@@ -49,7 +50,7 @@ export const ProfileCard = () => {
         {/* Condicional para alternar entre os cards */}
         {showQrCode ? (
           <div className="flex justify-center items-start my-6 mb-4 border-2 border-dashed border-gray-300 rounded-lg p-4">
-            <img src="./mooke/qcode.png" alt="QR Code" />
+            <Image width={100}  height={100} src="./mooke/qcode.png" alt="QR Code" />
           </div>
         ) : (
           <>
