@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiLink, FiUsers, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp, FiSettings } from "react-icons/fi";
+import { FiLink, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp, FiSettings } from "react-icons/fi";
 import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome, FaAvianex } from "react-icons/fa";
 
 
