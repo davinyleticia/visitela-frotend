@@ -17,22 +17,6 @@ export default function AdminLinksPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentTab, setCurrentTab] = useState("links");
 
-  const renderContent = () => {
-    switch (currentTab) {
-      case "links":
-        return <div></div>;
-      case "users":
-        return <div></div>;
-      case "appearance":
-        return <div></div>;
-      case "analytics":
-        return <div></div>;
-        
-      default:
-        return <div>Selecione uma aba</div>;
-    }
-  };
-
 
   const handleAddLink = () => {
     setIsModalOpen(true);
