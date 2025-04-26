@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiLink, FiUsers, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp, FiSettings } from "react-icons/fi";
-import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome } from "react-icons/fa";
+import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome, FaAvianex } from "react-icons/fa";
 
 
 const tabs = [
   { id: "home", label: "Home", icon: FaHome },
   { id: "links", label: "Links", icon: FiLink },
   { id: "Agenda", label: "Agenda", icon: FaCalendarAlt },
+  { id: "Viagens", label: "Viagens", icon: FaAvianex },
   { id: "usersmember", label: "Membros", icon: FaUsers },
   { id: "users", label: "Usuários", icon: FiUsers },
   { id: "appearance", label: "Aparência", icon: FiEdit },
@@ -59,7 +60,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         {/* Exibir os 4 primeiros ícones */}
-        <div className="grid grid-cols-3 py-7  gap-4 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
+        <div className="grid grid-cols-3 sm:py-7  gap-4 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
 
           {tabs.slice(0, 3).map(({ id, label, icon: Icon }) => (
             <button
@@ -67,7 +68,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
               onClick={() => handleTabClick(id)}
               className="flex flex-col items-center text-gray-600 hover:text-gray-800 focus:outline-none relative"
             >
-              <Icon className={`w-6 h-6 mb-1 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
+              <Icon className={`w-6 h-6 mb-1 my-10 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
               <span
                 className={`text-sm transition-all text-xs sm:text-sm sm:block hidden ${
                   activeTab === id ? "font-semibold text-black" : "text-gray-500"
@@ -87,7 +88,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
   
         {/* Exibir ícones adicionais em grid de 4 */}
         {isExpanded && (
-          <div className="grid grid-cols-3 gap-4 py-7 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
+          <div className="grid grid-cols-3 gap-4 sm:py-7 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
 
             {tabs.slice(3).map(({ id, label, icon: Icon }) => (
               <button
