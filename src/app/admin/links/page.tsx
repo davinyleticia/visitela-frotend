@@ -7,6 +7,7 @@ import { AddLinkSection } from "@/components/organisms/AddLinkSection";
 import { Modal } from "@/components/atoms/Modal";
 import { AddLinkForm } from "@/components/molecules/AddLinkForm";
 import { AdminNavigation } from "@/components/molecules/AdminNavigation";
+import { Title } from "@/components/atoms/Title";
 
 export default function AdminLinksPage() {
   const [isSensitive, setIsSensitive] = useState(false);
@@ -43,6 +44,9 @@ export default function AdminLinksPage() {
   return (
     <div className="p-6  mx-auto space-y-6" style={{maxWidth: '900px'}}>
       <CardSecurityBanner />
+      <Title className="text-center text-2xl font-bold mb-4">
+        Administração de Links
+      </Title>
       <SensitiveWarning isSensitive={isSensitive} onToggle={setIsSensitive} />
       <AddLinkSection onAdd={handleAddLink} />
       <LinksList links={links} onEdit={handleEditLink} onDelete={handleDeleteLink} />
