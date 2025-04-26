@@ -7,7 +7,11 @@ import { QrCode, CircleUserRound, HeartPlus } from "lucide-react";
 import { useState, useEffect } from "react"; // Importando useState e useEffect
 import Image from "next/image";
 
-export const ProfileCard = () => {
+interface ProfileCardProps {
+  setOpenShare: (open: boolean) => void;
+}
+
+export const ProfileCard = ({ setOpenShare }: ProfileCardProps) => {
   const [showQrCode, setShowQrCode] = useState(false); // Estado para alternar entre os cards
 
   // Função para alternar o estado
@@ -75,7 +79,7 @@ export const ProfileCard = () => {
               sollicitudin sit massa adipiscing. Ut volutpat molestie sed
               egestas penatibus enim.
             </Text>
-            <ProfileActions />
+            <ProfileActions  setOpenShare={setOpenShare} />
 
             <h3 className="text-2xl font-medium mt-4 mb-2">Meus Links</h3>
             <SocialLink

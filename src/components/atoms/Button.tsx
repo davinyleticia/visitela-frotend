@@ -1,9 +1,11 @@
 interface ButtonProps {
-  text: string;
-  onClick: () => void;
+  text?: string;
+  onClick?: () => void;
   variant?: "primary" | "outline";
   fullWidth?: boolean;
   className?: string;
+  children?: React.ReactNode;
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -11,6 +13,7 @@ export default function Button({
   variant = "primary",
   onClick,
   fullWidth = false,
+  children,
 }: ButtonProps) {
   const baseStyles = "px-4 py-2 rounded-md text-sm sm:text-base transition-all cursor-pointer";
 
@@ -26,7 +29,7 @@ export default function Button({
       onClick={onClick}
       className={`${baseStyles} ${variantStyles} ${widthStyle}`}
     >
-      {text}
+      {text || children}
     </button>
   );
 }
