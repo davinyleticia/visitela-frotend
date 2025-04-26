@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarType> = ({ mobile = false, handleHome, handleMeVisi
       ) : (
       <nav className="flex space-x-4">
         <NavItem onClick={handleHome} text="🏠 Home" />
-        <NavItem text="🔍 Me Visitela" />
+        <NavItem onClick={handleMeVisite} text="🔍 Me Visitela" />
         <NavItem text="🏦 VisitePag" />
         <NavItem text="📙 Sobre" />
       </nav>)}

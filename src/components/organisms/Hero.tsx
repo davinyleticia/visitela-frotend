@@ -7,7 +7,7 @@ export default function Hero() {
     const router = useRouter();
   
     const handleCreate = () => {
-      router.push('/criar-conta');
+      router.push('/criar-conta?username=');
     };
 
   return (

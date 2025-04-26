@@ -12,7 +12,7 @@ export default function Header() {
     router.push("/login");
   };
   const handleCreate = () => {
-    router.push("/");
+    router.push("/novo-usuario");
   };
 
   const handleHome = () => {
