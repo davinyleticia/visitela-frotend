@@ -20,13 +20,13 @@ export default function AdminLinksPage() {
   const renderContent = () => {
     switch (currentTab) {
       case "links":
-        return <></>;
+        return <div></div>;
       case "users":
-        return <></>;
+        return <div></div>;
       case "appearance":
-        return <></>;
+        return <div></div>;
       case "analytics":
-        return <></>;
+        return <div></div>;
         
       default:
         return <div>Selecione uma aba</div>;

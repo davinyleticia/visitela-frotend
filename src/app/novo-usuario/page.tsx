@@ -1,5 +1,4 @@
-"use client"
-import { SignupForm } from "@/components/organisms/SignupForm/SignupForm";
+"use client";
 import Headers from "@/components/organisms/Header";
 import { NewUsernameForm } from "@/components/organisms/NewUsernameForm";
 

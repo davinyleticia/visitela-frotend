@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export const NewUsernameForm = () => {
 
-  const [username, setUsername] = useState("");
+  const [username] = useState("");
   
   const handlePrev = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();

@@ -1,7 +1,6 @@
 // components/organisms/ShareModal.tsx
 
 import { FaTimes, FaCopy, FaEnvelope, FaLinkedin, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { IconWithLabel } from "../atoms/IconWithLabel";
 import { CopyButton } from "../atoms/CopyButton";
 import { ShareOption } from "../molecules/ShareOption";
 
