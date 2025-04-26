@@ -15,9 +15,10 @@ const tabs = [
 
 interface AdminNavigationProps {
   onTabChange?: (tabId: string) => void;
+  currentTab?: string;
 }
 
-export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
+export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProps) => {
     const [activeTab, setActiveTab] = useState("links");
     const [isScrolled, setIsScrolled] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);

@@ -42,7 +42,7 @@ export default function AdminLinksPage() {
       <SensitiveWarning isSensitive={isSensitive} onToggle={setIsSensitive} />
       <AddLinkSection onAdd={handleAddLink} />
       <LinksList links={links} onEdit={handleEditLink} onDelete={handleDeleteLink} />
-      <AdminNavigation onTabChange={setCurrentTab} />
+      <AdminNavigation onTabChange={setCurrentTab} currentTab={currentTab} />
 
       {/* Modal para adicionar novo link */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Adicionar Novo Link">
