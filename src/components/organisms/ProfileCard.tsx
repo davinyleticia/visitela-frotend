@@ -87,6 +87,11 @@ export const ProfileCard = ({ setOpenShare }: ProfileCardProps) => {
               username="Minhas Viagens"
               isLocked={false}
             />
+                        <SocialLink
+              platform="other"
+              username="Nosso(s) Produto(s)"
+              isLocked={false}
+            />
             <SocialLink
               platform="instagram"
               username="@edu_maria"
