@@ -32,7 +32,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
       setIsExpanded(prev => !prev);
     };
 
-    console.log("activeTab", activeTab);
+    console.log("activeTab", currentTab);
   
     useEffect(() => {
       const onScroll = () => {
