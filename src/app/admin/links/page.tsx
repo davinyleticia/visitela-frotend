@@ -13,6 +13,10 @@ export default function AdminLinksPage() {
   const [links, setLinks] = useState([
     { id: 1, title: "Minhas redes", url: "https://meusite.com" },
     { id: 2, title: "Design Library", url: "https://library.relume.io" },
+    { id: 3, title: "Design Library", url: "https://library.relume.io" },
+    { id: 4, title: "Design Library", url: "https://library.relume.io" },
+    { id: 5, title: "Design Library", url: "https://library.relume.io" },
+    { id: 6, title: "Design Library", url: "https://library.relume.io" },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentTab, setCurrentTab] = useState("links");
@@ -37,7 +41,7 @@ export default function AdminLinksPage() {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto space-y-6">
+    <div className="p-6  mx-auto space-y-6" style={{maxWidth: '900px'}}>
       <CardSecurityBanner />
       <SensitiveWarning isSensitive={isSensitive} onToggle={setIsSensitive} />
       <AddLinkSection onAdd={handleAddLink} />
