@@ -10,7 +10,6 @@ const tabs = [
   { id: "Agenda", label: "Agenda", icon: FaCalendarAlt },
   { id: "Viagens", label: "Viagens", icon: FaAvianex },
   { id: "usersmember", label: "Membros", icon: FaUsers },
-  { id: "users", label: "Usuários", icon: FiUsers },
   { id: "appearance", label: "Aparência", icon: FiEdit },
   { id: "analytics", label: "Analytics", icon: FiBarChart2 },
   { id: "settings", label: "Configurações", icon: FiSettings },
