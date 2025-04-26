@@ -49,7 +49,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
     return (
         <motion.div
         animate={{
-          backgroundColor: "#F9FAFB",
+          backgroundColor: "#F0f0F0",
           boxShadow: isScrolled ? "0 1px 4px rgba(0,0,0,0.08)" : "none",
         }}
         className="
