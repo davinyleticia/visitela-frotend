@@ -11,7 +11,6 @@ const tabs = [
   { id: "reports", label: "Relatórios", icon: FiBarChart2 },
   { id: "logs", label: "Logs", icon: FiEdit },
   { id: "backup", label: "Backup", icon: FiBarChart2 },
-  // Adicione mais ícones conforme necessário
 ];
 
 interface AdminNavigationProps {
