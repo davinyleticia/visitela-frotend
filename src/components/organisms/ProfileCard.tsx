@@ -84,7 +84,7 @@ export const ProfileCard = ({ setOpenShare }: ProfileCardProps) => {
             <h3 className="text-2xl font-medium mt-4 mb-2">Meus Links</h3>
             <SocialLink
               platform="other"
-              username="Minhas Viagens"
+              username="Minha(s) Viagen(s)"
               isLocked={false}
             />
                         <SocialLink
