@@ -95,7 +95,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
                 onClick={() => handleTabClick(id)}
                 className="flex flex-col items-center text-gray-600 hover:text-gray-800 focus:outline-none relative"
               >
-                <Icon className={`w-6 h-6 mb-1 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
+                <Icon className={`w-6 h-6 my-10 mb-1 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
                 <span
                   className={`text-sm transition-all text-xs sm:text-sm sm:block hidden ${
                     activeTab === id ? "font-semibold text-black" : "text-gray-500"
