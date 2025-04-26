@@ -1,6 +1,7 @@
 "use client";
 import { Login } from "@/components/organisms/Login";
 import Headers from "@/components/organisms/Header";
+import { Footer } from "@/components/organisms/Footer";
 
 export default function RedefinirSenhaPage() {
   return (
@@ -9,6 +10,7 @@ export default function RedefinirSenhaPage() {
       <main className="min-h-screen bg-white flex items-center justify-center px-4">
         <Login />
       </main>
+      <Footer />
     </>
   );
 }

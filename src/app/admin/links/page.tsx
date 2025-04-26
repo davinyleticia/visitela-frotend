@@ -8,6 +8,8 @@ import { Modal } from "@/components/atoms/Modal";
 import { AddLinkForm } from "@/components/molecules/AddLinkForm";
 import { AdminNavigation } from "@/components/molecules/AdminNavigation";
 import { Title } from "@/components/atoms/Title";
+import Spacer from "@/components/atoms/Space";
+import { Footer } from "@/components/organisms/Footer";
 
 export default function AdminLinksPage() {
   const [isSensitive, setIsSensitive] = useState(false);
@@ -41,8 +43,9 @@ export default function AdminLinksPage() {
     setLinks(links.filter(link => link.id !== id));
   };
 
-  return (
-    <div className="p-6  mx-auto space-y-6" style={{maxWidth: '900px'}}>
+  return (<>
+    <div className="p-6 mx-auto space-y-6 max-w-[600px] lg:max-w-[800px]">
+
       <CardSecurityBanner />
       <Title className="text-center text-2xl font-bold mb-4">
         Administração de Links
@@ -57,6 +60,8 @@ export default function AdminLinksPage() {
         <AddLinkForm onSave={handleSaveLink} onCancel={() => setIsModalOpen(false)} />
       </Modal>
     </div>
+    <Footer/>
+    <Spacer/></>
   );
 };
 

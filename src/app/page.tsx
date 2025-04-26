@@ -6,6 +6,7 @@ import { CardGrid } from "@/components/organisms/CardGrid";
 import { Tela } from "@/components/organisms/Tela";
 import { FAQList } from "@/components/organisms/FAQList";
 import FooterImg from "@/components/organisms/FooterImg";
+import { Footer } from "@/components/organisms/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <DescriptionApp />
       <FAQList />
       <FooterImg/>
+      <Footer />
     </>
   );
 }
