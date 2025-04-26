@@ -47,13 +47,15 @@ export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
           boxShadow: isScrolled ? "0 1px 4px rgba(0,0,0,0.08)" : "none",
         }}
         className="
-          fixed bottom-0 left-0 right-0 z-50 backdrop-blur-md 
-          flex flex-col items-center rounded-t-2xl sm:top-0 sm:left-0 sm:bottom-0 sm:right-auto sm:w-20 sm:rounded-none sm:flex sm:flex-col
+          fixed bottom-0 left-0 right-0 z-50 backdrop-blur-md
+          flex flex-col items-center rounded-t-2xl
+          sm:top-0 sm:left-0 sm:bottom-0 sm:right-auto sm:h-screen sm:w-30 sm:rounded-none sm:overflow-y-auto
         "
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         {/* Exibir os 4 primeiros ícones */}
-        <div className="grid grid-cols-4 gap-4 w-full px-4">
+        <div className="grid grid-cols-3 py-7  gap-4 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
+
           {tabs.slice(0, 4).map(({ id, label, icon: Icon }) => (
             <button
               key={id}
@@ -62,7 +64,7 @@ export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
             >
               <Icon className={`w-6 h-6 mb-1 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
               <span
-                className={`text-sm transition-all ${
+                className={`text-sm transition-all text-xs sm:text-sm sm:block hidden ${
                   activeTab === id ? "font-semibold text-black" : "text-gray-500"
                 }`}
               >
@@ -80,7 +82,8 @@ export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
   
         {/* Exibir ícones adicionais em grid de 4 */}
         {isExpanded && (
-          <div className="grid grid-cols-4 gap-4 w-full mt-4 px-4">
+          <div className="grid grid-cols-3 gap-4 py-7 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
+
             {tabs.slice(4).map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
@@ -89,7 +92,7 @@ export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
               >
                 <Icon className={`w-6 h-6 mb-1 ${isScrolled ? "w-5 h-5" : "w-6 h-6"}`} />
                 <span
-                  className={`text-sm transition-all ${
+                  className={`text-sm transition-all text-xs sm:text-sm sm:block hidden ${
                     activeTab === id ? "font-semibold text-black" : "text-gray-500"
                   }`}
                 >
