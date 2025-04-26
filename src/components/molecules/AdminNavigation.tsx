@@ -31,6 +31,8 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
     const toggleExpansion = () => {
       setIsExpanded(prev => !prev);
     };
+
+    console.log("activeTab", activeTab);
   
     useEffect(() => {
       const onScroll = () => {
