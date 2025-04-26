@@ -56,7 +56,7 @@ export const AdminNavigation = ({ onTabChange }: AdminNavigationProps) => {
         {/* Exibir os 4 primeiros ícones */}
         <div className="grid grid-cols-3 py-7  gap-4 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
 
-          {tabs.slice(0, 4).map(({ id, label, icon: Icon }) => (
+          {tabs.slice(0, 3).map(({ id, label, icon: Icon }) => (
             <button
               key={id}
               onClick={() => handleTabClick(id)}
