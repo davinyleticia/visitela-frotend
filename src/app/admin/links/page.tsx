@@ -44,7 +44,7 @@ export default function AdminLinksPage() {
   };
 
   return (<>
-    <div className="p-6 mx-auto space-y-6 max-w-[600px] lg:max-w-[800px]">
+    <div className="p-6 mx-auto space-y-6 max-w-[500px] lg:max-w-[800px]">
 
       <CardSecurityBanner />
       <Title className="text-center text-2xl font-bold mb-4">
