@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiLink, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp, FiSettings } from "react-icons/fi";
-import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome, FaAvianex } from "react-icons/fa";
+import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome, FaAvianex, FaPaperclip } from "react-icons/fa";
 
 
 const tabs = [
@@ -9,6 +9,7 @@ const tabs = [
   { id: "links", label: "Links", icon: FiLink },
   { id: "Agenda", label: "Agenda", icon: FaCalendarAlt },
   { id: "Viagens", label: "Viagens", icon: FaAvianex },
+  { id: "Catalogo", label: "Catálogo", icon: FaPaperclip },
   { id: "usersmember", label: "Membros", icon: FaUsers },
   { id: "appearance", label: "Aparência", icon: FiEdit },
   { id: "analytics", label: "Analytics", icon: FiBarChart2 },
