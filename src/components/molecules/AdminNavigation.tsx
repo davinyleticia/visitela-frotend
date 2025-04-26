@@ -1,16 +1,19 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiLink, FiUsers, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiLink, FiUsers, FiEdit, FiBarChart2, FiChevronDown, FiChevronUp, FiSettings } from "react-icons/fi";
+import { FaRegWindowClose, FaCalendarAlt, FaUsers, FaHome } from "react-icons/fa";
+
 
 const tabs = [
+  { id: "home", label: "Home", icon: FaHome },
   { id: "links", label: "Links", icon: FiLink },
+  { id: "Agenda", label: "Agenda", icon: FaCalendarAlt },
+  { id: "usersmember", label: "Membros", icon: FaUsers },
   { id: "users", label: "Usuários", icon: FiUsers },
   { id: "appearance", label: "Aparência", icon: FiEdit },
   { id: "analytics", label: "Analytics", icon: FiBarChart2 },
-  { id: "settings", label: "Configurações", icon: FiEdit },
-  { id: "reports", label: "Relatórios", icon: FiBarChart2 },
-  { id: "logs", label: "Logs", icon: FiEdit },
-  { id: "backup", label: "Backup", icon: FiBarChart2 },
+  { id: "settings", label: "Configurações", icon: FiSettings },
+  { id: "sair", label: "Sair", icon: FaRegWindowClose },
 ];
 
 interface AdminNavigationProps {
@@ -86,7 +89,7 @@ export const AdminNavigation = ({ onTabChange, currentTab }: AdminNavigationProp
         {isExpanded && (
           <div className="grid grid-cols-3 gap-4 py-7 w-full sm:flex sm:flex-col sm:items-center sm:gap-6 sm:mt-8">
 
-            {tabs.slice(4).map(({ id, label, icon: Icon }) => (
+            {tabs.slice(3).map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
                 onClick={() => handleTabClick(id)}
