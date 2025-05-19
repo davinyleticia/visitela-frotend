@@ -27,6 +27,30 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <nav>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, background: "#000" }}>
+            <li>
+              <a
+                href="https://github.com/davinyleticia/visitela-frotend"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginBottom: "1rem",
+                  padding: "12px 16px",
+                }}
+              >
+                Repositório do Projeto GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
         {children}
       </body>
     </html>
