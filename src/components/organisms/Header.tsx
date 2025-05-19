@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   const handleMeVisite = () => {
-    router.push("/mevisitela");
+    router.push("/admin/");
   };
 
   const toggleMenu = () => {

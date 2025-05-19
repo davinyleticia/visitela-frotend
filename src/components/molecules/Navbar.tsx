@@ -13,15 +13,13 @@ const Navbar: React.FC<NavbarType> = ({ mobile = false, handleHome, handleMeVisi
       {mobile ? (
         <nav className="flex flex-col space-x-4">
           <NavItem onClick={handleHome} text="🏠 Home" />
-          <NavItem onClick={handleMeVisite} text="🔍 Me Visitela" />
-          <NavItem text="🏦 VisitePag" />
+          <NavItem onClick={handleMeVisite} text="🏦 Admin" />
           <NavItem text="📙 Sobre" />
         </nav>
       ) : (
       <nav className="flex space-x-4">
         <NavItem onClick={handleHome} text="🏠 Home" />
-        <NavItem onClick={handleMeVisite} text="🔍 Me Visitela" />
-        <NavItem text="🏦 VisitePag" />
+        <NavItem onClick={handleMeVisite} text="🏦 Admin" />
         <NavItem text="📙 Sobre" />
       </nav>)}
     </>
