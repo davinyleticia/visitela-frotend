@@ -32,7 +32,6 @@ export default function RootLayout({
             <li>
               <a
                 href="https://github.com/davinyleticia/visitela-frotend"
-                target="_blank"
                 rel="noopener noreferrer"
                 style={{
                   color: "#fff",
